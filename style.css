@@ -1,0 +1,169 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica;
+	margin: 0;
+}
+
+main {
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+h1 {
+	margin-block: 0;
+	margin-bottom: 0.5rem;
+	text-align: center;
+	padding: 0.5rem;
+	background: white;
+	border-radius: 0.5rem;
+	font-size: 1.6rem;
+}
+
+.face {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1rem;
+}
+
+.card {
+	height: max-content;
+	width: max-content;
+	max-width: 80vw;
+	padding: 1rem;
+	position: relative;
+	background: lightgray;
+	border-radius: 0.5rem;
+}
+
+.input-nums {
+	position: relative;
+	display: flex;
+	gap: 0.5rem;
+}
+
+.input-nums > input {
+	max-width: 32vw;
+	padding: 0.4rem;
+	font-size: 0.8rem;
+	margin: auto;
+}
+
+.operations {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-row-gap: 0.5rem;
+	grid-column-gap: 0.5rem;
+	margin-block: 0.5rem;
+}
+
+button {
+	padding: 0.5rem;
+	font-size: 0.8rem;
+	font-weight: bold;
+	border: 1px solid #00000000;
+	border-radius: 0.25rem;
+	transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+	box-shadow: 0 0 1rem 0 #00000080;
+}
+
+.red-btn {
+	background: darkred;
+	color: white;
+}
+
+.red-btn:hover {
+	background: white;
+	color: darkred;
+	border-color: darkred;
+}
+
+.red-btn {
+	background: darkred;
+	color: white;
+}
+
+.red-btn:hover {
+	background: white;
+	color: darkred;
+	border-color: darkred;
+}
+
+.blue-btn {
+	background: darkblue;
+	color: white;
+}
+
+.blue-btn:hover {
+	background: white;
+	color: darkblue;
+	border-color: darkblue;
+}
+
+.yellow-btn {
+	background: darkgoldenrod;
+	color: white;
+}
+
+.yellow-btn:hover {
+	background: white;
+	color: darkgoldenrod;
+	border-color: darkgoldenrod;
+}
+
+.violet-btn {
+	background: darkviolet;
+	color: white;
+}
+
+.violet-btn:hover {
+	background: white;
+	color: darkviolet;
+	border-color: darkviolet;
+}
+
+.green-btn {
+	background: darkgreen;
+	color: white;
+}
+
+.green-btn:hover {
+	background: white;
+	color: darkgreen;
+	border-color: darkgreen;
+}
+
+#sol {
+	grid-area: span 1 / span 2;
+}
+
+#result {
+	display: flex;
+	width: 100%;
+	padding: 0.5rem;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	background: black;
+	color: white;
+	border-radius: 0.25rem;
+	font-weight: bold;
+	font-size: 1.6rem;
+	box-shadow: 0 0 1rem 0 #00000080;
+	border: 1px solid #00000000;
+	transition: all 0.5s ease-in-out;
+}
+
+#result:hover {
+	background: white;
+	color: black;
+	border-color: black;
+}

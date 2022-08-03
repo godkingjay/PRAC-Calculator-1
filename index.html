@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Calculator</title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script type="text/javascript" src="solve.js"></script>
+
+</head>
+<body onload="loadDoc()">
+
+	<main>
+		<div class="face">
+			<div class="card">
+				<h1>CALCULATOR</h1>
+
+				<form class="input-nums">
+					<input type="number" id="num1" name="num1" placeholder="Number 1" value="0">
+					<input type="number" id="num2" name="num2" placeholder="Number 2" value="0">
+				</form>
+
+				<div class="operations">
+					<button id="add" class="red-btn" onclick="add()">ADD</button>
+					<button id="sub" class="blue-btn" onclick="sub()">SUBTRACT</button>
+					<button id="mul" class="yellow-btn" onclick="mul()">MULTIPLY</button>
+					<button id="div" class="violet-btn" onclick="div()">DIVIDE</button>
+					<button id="sol" class="green-btn" onclick="solve()">SOLVE</button>
+				</div>
+
+				<div id="result">0</div>
+
+			</div>
+		</div>
+	</main>
+
+</body>
+</html>
